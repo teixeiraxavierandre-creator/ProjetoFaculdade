@@ -2,6 +2,9 @@ package org.example.entities;
 
 import jakarta.persistence.*;
 
+import java.util.Date;
+
+
 @Entity
 public class Faculdade {
     @Id
@@ -17,12 +20,15 @@ public class Faculdade {
     private Date dataFundacao;
     
 
-    public Faculdade( Long idFalcudade, String nome, String cnpj, String endereco, String telefone){
+    public Faculdade( Long idFalcudade, String nome, String cnpj, String endereco, String telefone,String emailInstitucional, String site, Date dataFundacao){
         this.idFalcudade = idFalcudade;
         this.nome = nome;
         this.cnpj = cnpj;
         this.endereco = endereco;
         this.telefone = telefone;
+        this.emailInstitucional = emailInstitucional;
+        this.site = site;
+        this.dataFundacao = dataFundacao;
     }
 
     public Long getIdFalcudade() {
@@ -63,5 +69,29 @@ public class Faculdade {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public String getEMailInstitucional(){
+        return emailInstitucional;
+    }
+
+    public void setEmailInstitucional(String emailInstitucional) {
+        this.emailInstitucional = emailInstitucional;
+    }
+
+    public String getSite(){
+        return site;
+    }
+
+    public void setSite(String site) {
+        this.site = site;
+    }
+
+    public Date getDataFundacao(){
+        return dataFundacao;
+    }
+
+    public void setDataFundacao(String dataFundacao) {
+        this.dataFundacao = dataFundacao;
     }
 }
