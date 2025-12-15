@@ -13,13 +13,20 @@ public class Matricula {
     private String status;
     private String semestre;
     private String valor;
+    private String formaPagamento;
+    private String desconto;
+    private Date dataCancelamento;
+    
 
-    public Matricula( Long idMatricula, Date dataMatricula, String status, String semestre, String valor){
+    public Matricula( Long idMatricula, Date dataMatricula, String status, String semestre, String valor, String formaPagamento, String desconto, Date dataCancelamento){
         this.idMatricula = idMatricula;
         this.dataMatricula = dataMatricula;
         this.status = status;
         this.semestre = semestre;
         this.valor = valor;
+        this.formaPagamento = formaPagamento;
+        this.desconto = desconto;
+        this.dataCancelamento = dataCancelamento;
     }
 
     public Long getIdMatricula() {
@@ -61,4 +68,29 @@ public class Matricula {
     public void setValor(String valor) {
         this.valor = valor;
     }
+
+    public String getFormaPagameto() {
+        return formaPagamento;
+    }
+
+    public void setFormaPagamento(String formaPagamento) {
+        this.formaPagamento = formaPagamento;
+    }
+
+    public String getdesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(String desconto) {
+        this.desconto = desconto;
+    }
+
+    public Date getDataCancelamento() {
+        return dataCancelamento;
+    }
+
+    public void setDataCancelamento(Date dataCancelamento) {
+        this.dataCancelamento = dataCancelamento;
+    }
+
 }
