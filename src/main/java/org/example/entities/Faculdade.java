@@ -12,6 +12,10 @@ public class Faculdade {
     private String cnpj;
     private String endereco;
     private String telefone;
+    private String emailInstitucional;
+    private String site;
+    private Date dataFundacao;
+    
 
     public Faculdade( Long idFalcudade, String nome, String cnpj, String endereco, String telefone){
         this.idFalcudade = idFalcudade;
