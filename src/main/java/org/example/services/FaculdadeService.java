@@ -44,5 +44,8 @@ public class FaculdadeService {
         entity.setCnpj(obj.getCnpj());
         entity.setEndereco(obj.getEndereco());
         entity.setTelefone(obj.getTelefone());
+        entity.setEmailInstitucional(obj.getEmailInstitucional());
+        entity.setSite(obj.getSite());
+        entity.setDataFundacao(obj.getDataFundacao());
     }
 }
